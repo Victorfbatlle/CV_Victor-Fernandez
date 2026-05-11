@@ -1,0 +1,486 @@
+:root {
+    --color-header-fondo: #f5f7fa;
+    --color-detalles: #9ca3af;
+    --color-body-background: #f5f7fa;
+    --color-header-texto: #1f2933;
+    --color-Nombre-header: white;
+    --color-Oficio-header: white;
+    --color-Informacion: white;
+    --color-nav-a: white;
+    --color-nav-a-hover: #e5e7eb;
+    --background-color-nav: black;
+    --background-color-section1-body: #ffffff;
+    --background-color-section2-body: #ffffff;
+    --background-color-section3-body: #ffffff;
+    --background-color-section4-body: #ffffff;
+    --background-color-section5-body: #ffffff;
+    --background-color-section6-body: #ffffff;
+    --background-color-section7-body: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+    color: var(--color-header-texto);
+
+    
+}
+.Fondo-header {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+
+}
+.header-grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 4rem;
+    padding-top: 1rem;
+    border-radius: 8px;
+    padding: 9rem;
+    margin-bottom: 1.5rem;
+    z-index: 1;
+    margin-left: clamp(1rem, 8vw, 10rem);
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-body-background);
+    
+
+}
+.FotoCV {
+    width: clamp(150px, 30vw, 400px);
+    height: clamp(150px, 30vw, 400px);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.FotoCV img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.Nombre {
+    gap: 1rem;
+    color: var(--color-Nombre-header);  
+}
+.Oficio {
+    color: var(--color-Oficio-header);
+    margin-bottom: 2rem;
+
+}
+.Titulos {
+    text-decoration: underline;
+
+}
+.Informacion {
+    z-index: 1;
+    color: var(--color-Informacion);
+    font-size: 0.75rem;
+}
+.nav { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: var(--background-color-nav);
+    height: 20px;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+.nav a {
+    color: var(--color-nav-a);
+    text-decoration: underline;
+}
+.nav a:hover {
+    color: var(--color-nav-a-hover);
+    text-decoration: underline;
+    height: 50px;
+}
+.contenedor-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.nav:hover ul {
+    opacity: 1;
+}
+.nav a {
+    color: var(--color-nav-a);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.nav:hover {
+    height: 50px;
+}
+.nav a:hover {
+    color: var(--color-nav-a-hover);
+    text-decoration: underline;
+}
+.section1 {
+    display: grid;
+    background-color: var(--background-color-section1-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.FormacionIdiomas-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;    
+}
+.section2 {
+    display: grid;
+    background-color: var(--background-color-section2-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;   
+}
+.Formacion {
+    margin-bottom: rem;
+
+
+}
+.section3 {
+    display: grid;
+    background-color: var(--background-color-section3-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.section4 {
+    display: grid;
+    background-color: var(--background-color-section4-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;  
+}
+.Habilidades-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.Projectos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+.MontajePC {
+    margin-top: 1.5rem;
+}
+.detalle {
+    color: #9ca3af;
+}
+.section5 {
+    display: grid;
+    background-color: var(--background-color-section5-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.section6 {
+    display: grid;
+    background-color: var(--background-color-section6-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem; 
+}
+.section7 {
+    display: grid;
+    background-color: var(--background-color-section7-body);
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.footer {
+    font-size: 0.75rem;
+}
+@media (max-width: 425px) {
+    .header-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .FotoCV {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .Nombre {
+        font-size: 1.2rem;
+    }
+
+    .Oficio {
+        font-size: 0.8rem;
+    }
+
+    .Informacion {
+        font-size: 0.7rem;
+    }
+
+    .section1 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+    }
+    .section2 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+
+    }
+    .section3 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        
+    }
+    .section4 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        
+    }
+    .section5 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        
+    }
+    .section6 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        
+    }
+    .section7 {
+        background-color: #ffffff;
+        margin: 0.5rem;
+        padding: 0.8rem;
+        
+    }
+
+    .FormacionIdiomas-grid {
+        flex-direction: column;
+        padding: 0.5rem;
+
+    }
+    .Habilidades-grid {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .Projectos {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 768px) {
+    .Habilidades-grid {
+        flex-direction: row;
+    }
+    .Habilidades-grid section {
+        flex: 1;
+    }
+
+    .FormacionIdiomas-grid {
+        flex-direction: row;
+    }
+    .FormacionIdiomas-grid section {
+        flex: 1;
+    }
+    .FotoCV {
+        width: clamp(150px, 30vw, 400px);
+        height: clamp(150px, 30vw, 400px);
+    }
+    .header-grid {
+        margin-left: clamp(1rem, 8vw, 10rem);
+        padding: 12rem;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+@media (min-width: 1024px) {
+    .Habilidades-grid {
+        flex-direction: row;
+    }
+    .Habilidades-grid section {
+        flex: 1;
+    } 
+    .FormacionIdiomas-grid {
+        flex-direction: row;
+    }
+    .FormacionIdiomas-grid section {
+        flex: 1;
+    }
+}
+@media print {
+    body {
+        font-size: 11px;
+        line-height: 1.2;
+        print-color-adjust: exact;
+    }
+    .header {
+        position: relative;
+        page-break-inside: avoid;
+    }
+    .Fondo-header {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .header-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding: 8px;
+        margin-left: 8px;
+        gap: 8px;
+    }
+    .FotoCV {
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .FotoCV img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .Nombre {
+        color: var(--color-Nombre-header);
+        font-size: 18px;
+        margin: 0;
+    }
+    .Oficio {
+        color: var(--color-Oficio-header);
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .Informacion {
+        color: var(--color-Informacion);
+        font-size: 9px;
+    }
+    .nav,
+    .no-print {
+        display: none;
+    }
+
+    .section1 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .section2 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .section3 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .section4 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .section5 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .section6 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .section7 {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 3px;
+        padding: 5px;
+    }
+    .Titulos {
+        font-size: 13px;
+        margin: 3px;
+    }
+    .FormacionIdiomas-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .FormacionIdiomas-grid section {
+        flex: 1;
+    }
+    .Habilidades-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .Habilidades-grid section {
+        flex: 1;
+    }
+    .Projectos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+    .detalle {
+        color: var(--color-detalles);
+        font-size: 9px;
+    }
+    p, li {
+        margin: 2px;
+    }
+
+    a[href]::after {
+        content: "";
+    }
+
+    .footer {
+        margin-top: 5px;
+        font-size: 9px;
+    }
+}
